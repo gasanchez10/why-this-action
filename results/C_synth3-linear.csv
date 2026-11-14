@@ -1,0 +1,69 @@
+case,seed,ind,truth,ref_cost,method,queries,seconds,note,found,cost,robust_valid,valid_truth,plan,gap_pct
+synth3-linear,0,0,true SCM,0.3775284144493056,"reference optimum (robust problem, free queries)",0,0,,1,0.3775284144493056,1,1,"x2 +0.84, block x1->x2",0.0
+synth3-linear,0,0,true SCM,0.3775284144493056,"oracle (true SCM, free queries)",0,0.1,,1,0.3112314689765733,0,1,"x2 +0.692, block x1->x2",-17.560782959724662
+synth3-linear,0,0,true SCM,0.3775284144493056,Algorithm 1,200,2.1,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,Algorithm 1 + polish (extension),320,2.2,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,ablation: no blocking,200,2.0,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,ablation: no certification,50,1.6,,1,0.39343279398596875,1,1,x2 +0.875,4.2127635769780625
+synth3-linear,0,0,true SCM,0.3775284144493056,ablation: no causal propagation (non-causal stand-in),60,0.4,,1,0.3956778737241655,1,1,x2 +0.88,4.8074419249566125
+synth3-linear,0,0,true SCM,0.3775284144493056,baseline: no abduction (stand-in for causal BO without abduction),200,2.0,,1,0.39676324814877956,1,1,"x2 +0.883, block x2->x3",5.0949366890784775
+synth3-linear,0,0,true SCM,0.3775284144493056,point estimate (one version),58,0.4,,1,0.3467249050185137,0,1,x2 +0.771,-8.159255900174955
+synth3-linear,0,0,true SCM,0.3775284144493056,ablation: surrogate on actions,900,1.0,,1,0.3777440040696349,1,1,x2 +0.84,0.057105534862511576
+synth3-linear,0,0,true SCM,0.3775284144493056,baseline: random search with certification (2000 queries),2000,0.6,,1,0.3783752520110379,1,1,"x2 +0.842, block x1->x2",0.2243109470230209
+synth3-linear,0,0,true SCM,0.3775284144493056,baseline: grid with our criterion,87480,0.0,,1,0.4495475888684153,1,1,x2 +1,19.07649110972556
+synth3-linear,0,0,true SCM,0.3775284144493056,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",39930,0.7,,1,0.7192761421894647,1,1,x2 +1.6,90.52238577556095
+synth3-linear,0,0,true SCM,0.3775284144493056,"Algorithm 1, budget 20",170,0.5,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,"Algorithm 1, budget 40",190,1.7,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,"Algorithm 1, budget 80",230,5.0,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,0,true SCM,0.3775284144493056,"Algorithm 1, budget 160",310,17.7,,1,0.37855068535046127,1,1,x2 +0.842,0.27077985709944574
+synth3-linear,0,1,true SCM,0.5486990244118047,"reference optimum (robust problem, free queries)",0,0,,1,0.5486990244118047,1,1,"x2 +1.22, block x1->x2",0.0
+synth3-linear,0,1,true SCM,0.5486990244118047,"oracle (true SCM, free queries)",0,0.1,,1,0.4438354430723818,0,1,"x2 +0.987, block x1->x2",-19.11131178916069
+synth3-linear,0,1,true SCM,0.5486990244118047,Algorithm 1,140,1.7,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,Algorithm 1 + polish (extension),260,1.7,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,ablation: no blocking,140,2.0,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,ablation: no certification,50,1.6,,1,0.6133506180756505,1,1,"x2 +1.34, x3 -0.0122, block x2->x3",11.782706144438858
+synth3-linear,0,1,true SCM,0.5486990244118047,ablation: no causal propagation (non-causal stand-in),57,0.3,,1,0.582239302994374,1,1,x2 +1.3,6.112691492120614
+synth3-linear,0,1,true SCM,0.5486990244118047,baseline: no abduction (stand-in for causal BO without abduction),200,1.8,,1,0.5806872159985734,1,1,"x2 +1.29, block x2->x3",5.829824760679947
+synth3-linear,0,1,true SCM,0.5486990244118047,point estimate (one version),53,0.4,,1,0.4985053147211587,0,1,x2 +1.11,-9.147767256275474
+synth3-linear,0,1,true SCM,0.5486990244118047,ablation: surrogate on actions,900,1.1,,1,0.5492642246715396,1,1,x2 +1.22,0.10300733819250674
+synth3-linear,0,1,true SCM,0.5486990244118047,baseline: random search with certification (2000 queries),2007,0.9,,1,0.5499962410528559,1,1,"x2 +1.22, block x1->x2",0.2364167937863204
+synth3-linear,0,1,true SCM,0.5486990244118047,baseline: grid with our criterion,87480,0.0,,1,0.8990951777368306,1,1,x2 +2,63.859445294375014
+synth3-linear,0,1,true SCM,0.5486990244118047,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",39930,0.8,,1,0.7192761421894647,1,1,x2 +1.6,31.08755623550006
+synth3-linear,0,1,true SCM,0.5486990244118047,"Algorithm 1, budget 20",110,0.4,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,"Algorithm 1, budget 40",130,1.3,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,"Algorithm 1, budget 80",170,4.4,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,0,1,true SCM,0.5486990244118047,"Algorithm 1, budget 160",250,16.2,,1,0.5543209037002061,1,1,x2 +1.23,1.0245834306754853
+synth3-linear,1,0,true SCM,0.33429580238960094,"reference optimum (robust problem, free queries)",0,0,,1,0.33429580238960094,1,1,"x2 +0.744, block x1->x2",0.0
+synth3-linear,1,0,true SCM,0.33429580238960094,"oracle (true SCM, free queries)",0,0.1,,1,0.27615522293205813,0,1,"x2 +0.614, block x1->x2",-17.39195617831407
+synth3-linear,1,0,true SCM,0.33429580238960094,Algorithm 1,290,2.8,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,0,true SCM,0.33429580238960094,Algorithm 1 + polish (extension),410,2.8,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,0,true SCM,0.33429580238960094,ablation: no blocking,230,2.3,,1,0.33494305535397145,1,1,x2 +0.745,0.1936168386631909
+synth3-linear,1,0,true SCM,0.33429580238960094,ablation: no certification,50,2.0,,1,0.34572615819375757,1,1,"x2 +0.769, block x1->x2",3.4192340204246108
+synth3-linear,1,0,true SCM,0.33429580238960094,ablation: no causal propagation (non-causal stand-in),55,0.4,,1,0.3492099272538762,0,1,"x1 +0.334, x2 +0.398",4.461355708826331
+synth3-linear,1,0,true SCM,0.33429580238960094,baseline: no abduction (stand-in for causal BO without abduction),200,2.4,,1,0.144111096809076,0,0,x2 +0.321,-56.89114377777216
+synth3-linear,1,0,true SCM,0.33429580238960094,point estimate (one version),58,0.5,,1,0.29993724359988216,0,1,x2 +0.667,-10.277891180241628
+synth3-linear,1,0,true SCM,0.33429580238960094,ablation: surrogate on actions,900,1.1,,1,0.3343324140956419,1,1,"x2 +0.744, block x1->x2",0.010951889248755897
+synth3-linear,1,0,true SCM,0.33429580238960094,baseline: random search with certification (2000 queries),2000,0.9,,1,0.3529089358391364,1,1,"x1 +0.661, x2 +0.0133, x3 +0.0116, block x1->x2",5.567863346319557
+synth3-linear,1,0,true SCM,0.33429580238960094,baseline: grid with our criterion,87480,0.0,,1,0.4495475888684153,1,1,x2 +1,34.475989723764336
+synth3-linear,1,0,true SCM,0.33429580238960094,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",39930,0.8,,1,0.7192761421894647,1,1,x2 +1.6,115.161583558023
+synth3-linear,1,0,true SCM,0.33429580238960094,"Algorithm 1, budget 20",260,0.7,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,0,true SCM,0.33429580238960094,"Algorithm 1, budget 40",280,1.8,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,0,true SCM,0.33429580238960094,"Algorithm 1, budget 80",320,5.4,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,0,true SCM,0.33429580238960094,"Algorithm 1, budget 160",400,19.4,,1,0.33534231265420167,1,1,x2 +0.746,0.3130491789367751
+synth3-linear,1,1,true SCM,0.8728780283674715,"reference optimum (robust problem, free queries)",0,0,,1,0.8728780283674715,1,1,x2 +1.94,0.0
+synth3-linear,1,1,true SCM,0.8728780283674715,"oracle (true SCM, free queries)",0,0.1,,1,0.7039531600979592,0,1,"x2 +1.57, block x1->x2",-19.35263149943751
+synth3-linear,1,1,true SCM,0.8728780283674715,Algorithm 1,320,2.8,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735
+synth3-linear,1,1,true SCM,0.8728780283674715,Algorithm 1 + polish (extension),440,2.3,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735
+synth3-linear,1,1,true SCM,0.8728780283674715,ablation: no blocking,290,2.7,,1,0.8772018319854343,1,1,x2 +1.95,0.4953502640053342
+synth3-linear,1,1,true SCM,0.8728780283674715,ablation: no certification,50,1.7,,1,0.8777159913324741,1,1,"x2 +1.95, block x1->x2",0.554254180741709
+synth3-linear,1,1,true SCM,0.8728780283674715,ablation: no causal propagation (non-causal stand-in),66,0.5,,1,0.9245147268934655,1,1,x2 +2.06,5.91568315937212
+synth3-linear,1,1,true SCM,0.8728780283674715,baseline: no abduction (stand-in for causal BO without abduction),290,2.1,,1,0.9193889589707379,1,1,"x2 +2.05, block x2->x3",5.328457022827693
+synth3-linear,1,1,true SCM,0.8728780283674715,point estimate (one version),56,0.5,,1,0.754668110724412,0,1,x2 +1.68,-13.542547045678932
+synth3-linear,1,1,true SCM,0.8728780283674715,ablation: surrogate on actions,900,1.2,,1,1.0392745175853084,1,1,x2 +2.31,19.0629714358884
+synth3-linear,1,1,true SCM,0.8728780283674715,baseline: random search with certification (2000 queries),2005,0.7,,1,0.8751232237814932,1,1,x2 +1.95,0.2572175425495482
+synth3-linear,1,1,true SCM,0.8728780283674715,baseline: grid with our criterion,87480,0.0,,1,0.8990951777368306,1,1,x2 +2,3.0035295330313794
+synth3-linear,1,1,true SCM,0.8728780283674715,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",39930,0.8,,1,1.078914213284197,1,1,x2 +2.4,23.604235439637677
+synth3-linear,1,1,true SCM,0.8728780283674715,"Algorithm 1, budget 20",290,0.6,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735
+synth3-linear,1,1,true SCM,0.8728780283674715,"Algorithm 1, budget 40",310,1.7,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735
+synth3-linear,1,1,true SCM,0.8728780283674715,"Algorithm 1, budget 80",350,4.7,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735
+synth3-linear,1,1,true SCM,0.8728780283674715,"Algorithm 1, budget 160",430,18.2,,1,0.873881902394446,1,1,x2 +1.94,0.11500736578877735

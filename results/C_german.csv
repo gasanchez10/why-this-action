@@ -1,0 +1,61 @@
+case,seed,ind,truth,ref_cost,method,queries,seconds,note,found,cost,robust_valid,valid_truth,plan,gap_pct
+german,0,0,held-out re-fit (proxy),0.19232601908201086,"reference optimum (robust problem, free queries)",0,0,,1,0.19232601908201086,1,1,log_credit -0.149,0.0
+german,0,0,held-out re-fit (proxy),0.19232601908201086,Algorithm 1,380,2.7,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,0,held-out re-fit (proxy),0.19232601908201086,Algorithm 1 + polish (extension),500,2.5,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,0,held-out re-fit (proxy),0.19232601908201086,ablation: no blocking,260,2.3,,1,0.1930274336958513,1,1,log_credit -0.15,0.3647008434887633
+german,0,0,held-out re-fit (proxy),0.19232601908201086,ablation: no certification,50,1.6,,1,0.18925245235747365,0,0,log_credit -0.147,-1.5981023988369425
+german,0,0,held-out re-fit (proxy),0.19232601908201086,ablation: no causal propagation (non-causal stand-in),59,0.5,,1,0.19259032345488156,1,1,log_credit -0.149,0.13742517737966864
+german,0,0,held-out re-fit (proxy),0.19232601908201086,baseline: no abduction (stand-in for causal BO without abduction),320,2.6,,1,0.1942033969380574,1,1,log_credit -0.151,0.976143459427603
+german,0,0,held-out re-fit (proxy),0.19232601908201086,point estimate (one version),59,0.4,,1,0.19259032345488156,1,1,log_credit -0.149,0.13742517737966864
+german,0,0,held-out re-fit (proxy),0.19232601908201086,ablation: surrogate on actions,900,1.0,,1,0.22138987200002086,1,1,log_credit -0.172,15.111763378004884
+german,0,0,held-out re-fit (proxy),0.19232601908201086,baseline: random search with certification (2000 queries),2000,0.8,,1,0.19238495722492088,1,1,log_credit -0.149,0.03064491387663182
+german,0,0,held-out re-fit (proxy),0.19232601908201086,baseline: grid with our criterion,86640,0.1,,1,0.20894876237420412,1,1,log_credit -0.162,8.643002840455537
+german,0,0,held-out re-fit (proxy),0.19232601908201086,"Algorithm 1, budget 20",350,0.8,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,0,held-out re-fit (proxy),0.19232601908201086,"Algorithm 1, budget 40",370,1.7,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,0,held-out re-fit (proxy),0.19232601908201086,"Algorithm 1, budget 80",410,5.2,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,0,held-out re-fit (proxy),0.19232601908201086,"Algorithm 1, budget 160",490,18.8,,1,0.1930005785852099,1,1,log_credit -0.15,0.3507375166494686
+german,0,1,held-out re-fit (proxy),0.024309117644852794,"reference optimum (robust problem, free queries)",0,0,,1,0.024309117644852794,1,1,"log_credit -0.0189, block log_credit->duration",0.0
+german,0,1,held-out re-fit (proxy),0.024309117644852794,Algorithm 1,380,3.1,,1,0.11287915073840371,1,1,log_credit -0.0876,364.3490248701179
+german,0,1,held-out re-fit (proxy),0.024309117644852794,Algorithm 1 + polish (extension),590,2.9,,1,0.08672730909533036,1,1,log_credit -0.0673,256.76864278820904
+german,0,1,held-out re-fit (proxy),0.024309117644852794,ablation: no blocking,620,4.2,,1,0.025811235024351967,1,1,log_credit -0.02,6.179234480841922
+german,0,1,held-out re-fit (proxy),0.024309117644852794,ablation: no certification,50,1.5,,1,0.057985287658734036,1,1,"log_credit -0.045, block log_credit->duration",138.5330825490156
+german,0,1,held-out re-fit (proxy),0.024309117644852794,ablation: no causal propagation (non-causal stand-in),62,0.5,,1,0.02579621699425209,1,1,log_credit -0.02,6.117455068198141
+german,0,1,held-out re-fit (proxy),0.024309117644852794,baseline: no abduction (stand-in for causal BO without abduction),620,4.9,,1,0.025371115210990735,1,1,log_credit -0.0197,4.368721159086619
+german,0,1,held-out re-fit (proxy),0.024309117644852794,point estimate (one version),61,0.4,,1,0.025243333882610915,1,1,log_credit -0.0196,3.8430693018425277
+german,0,1,held-out re-fit (proxy),0.024309117644852794,ablation: surrogate on actions,900,1.1,,1,0.025049917095636812,1,1,log_credit -0.0194,3.0474139851837556
+german,0,1,held-out re-fit (proxy),0.024309117644852794,baseline: random search with certification (2000 queries),2002,0.7,,1,0.024318797337423925,1,1,"log_credit -0.0189, block log_credit->duration",0.03981918518207728
+german,0,1,held-out re-fit (proxy),0.024309117644852794,baseline: grid with our criterion,86640,0.1,,1,0.05223719059355082,1,1,log_credit -0.0405,114.88723431560466
+german,0,1,held-out re-fit (proxy),0.024309117644852794,"Algorithm 1, budget 20",350,0.9,,1,0.11287915073840371,1,1,log_credit -0.0876,364.3490248701179
+german,0,1,held-out re-fit (proxy),0.024309117644852794,"Algorithm 1, budget 40",370,2.1,,1,0.11287915073840371,1,1,log_credit -0.0876,364.3490248701179
+german,0,1,held-out re-fit (proxy),0.024309117644852794,"Algorithm 1, budget 80",410,5.9,,1,0.11287915073840371,1,1,log_credit -0.0876,364.3490248701179
+german,0,1,held-out re-fit (proxy),0.024309117644852794,"Algorithm 1, budget 160",640,21.5,,1,0.024998111751912754,1,1,log_credit -0.0194,2.83430323192273
+german,1,0,held-out re-fit (proxy),0.1685623545625985,"reference optimum (robust problem, free queries)",0,0,,1,0.1685623545625985,1,1,log_credit -0.131,0.0
+german,1,0,held-out re-fit (proxy),0.1685623545625985,Algorithm 1,500,3.4,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,0,held-out re-fit (proxy),0.1685623545625985,Algorithm 1 + polish (extension),620,3.3,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,0,held-out re-fit (proxy),0.1685623545625985,ablation: no blocking,320,2.5,,1,0.17047540182969545,1,1,log_credit -0.132,1.134919639714993
+german,1,0,held-out re-fit (proxy),0.1685623545625985,ablation: no certification,50,1.6,,1,0.17210696459978567,1,1,log_credit -0.134,2.1028479617439366
+german,1,0,held-out re-fit (proxy),0.1685623545625985,ablation: no causal propagation (non-causal stand-in),60,0.4,,1,0.16872445949152967,1,1,log_credit -0.131,0.09616911756591406
+german,1,0,held-out re-fit (proxy),0.1685623545625985,baseline: no abduction (stand-in for causal BO without abduction),410,2.8,,1,0.17019230434647542,1,1,log_credit -0.132,0.966971414291451
+german,1,0,held-out re-fit (proxy),0.1685623545625985,point estimate (one version),57,0.4,,1,0.1702374378146726,1,1,log_credit -0.132,0.9937469468914051
+german,1,0,held-out re-fit (proxy),0.1685623545625985,ablation: surrogate on actions,900,1.1,,1,0.18826952325605895,1,1,"log_credit -0.146, block log_credit->duration",11.691322623368938
+german,1,0,held-out re-fit (proxy),0.1685623545625985,baseline: random search with certification (2000 queries),2000,0.8,,1,0.1686668431310485,1,1,log_credit -0.131,0.06198808074384665
+german,1,0,held-out re-fit (proxy),0.1685623545625985,baseline: grid with our criterion,86640,0.1,,1,0.20894876237420412,1,1,log_credit -0.162,23.959328235776066
+german,1,0,held-out re-fit (proxy),0.1685623545625985,"Algorithm 1, budget 20",470,1.0,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,0,held-out re-fit (proxy),0.1685623545625985,"Algorithm 1, budget 40",490,2.4,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,0,held-out re-fit (proxy),0.1685623545625985,"Algorithm 1, budget 80",530,6.1,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,0,held-out re-fit (proxy),0.1685623545625985,"Algorithm 1, budget 160",610,20.6,,1,0.16905467791935494,1,1,log_credit -0.131,0.2920719504861946
+german,1,1,held-out re-fit (proxy),0.48166218436211883,"reference optimum (robust problem, free queries)",0,0,,1,0.48166218436211883,1,1,"log_credit -0.374, block log_credit->duration",0.0
+german,1,1,held-out re-fit (proxy),0.48166218436211883,Algorithm 1,470,3.1,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838
+german,1,1,held-out re-fit (proxy),0.48166218436211883,Algorithm 1 + polish (extension),590,3.2,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838
+german,1,1,held-out re-fit (proxy),0.48166218436211883,ablation: no blocking,440,3.3,,1,0.4848560187096486,1,1,log_credit -0.376,0.6630859658952604
+german,1,1,held-out re-fit (proxy),0.48166218436211883,ablation: no certification,50,1.7,,1,0.4687798665301644,0,0,log_credit -0.364,-2.674554542623042
+german,1,1,held-out re-fit (proxy),0.48166218436211883,ablation: no causal propagation (non-causal stand-in),65,0.5,,1,0.48219598025498095,1,1,log_credit -0.374,0.11082370802455443
+german,1,1,held-out re-fit (proxy),0.48166218436211883,baseline: no abduction (stand-in for causal BO without abduction),470,3.1,,1,0.4863080656753876,1,1,log_credit -0.377,0.9645518091526029
+german,1,1,held-out re-fit (proxy),0.48166218436211883,point estimate (one version),66,0.5,,1,0.487004945935949,1,1,log_credit -0.378,1.109234178495
+german,1,1,held-out re-fit (proxy),0.48166218436211883,ablation: surrogate on actions,900,1.2,,1,0.4916237248754453,1,1,"log_credit -0.382, block log_credit->duration",2.0681591448826087
+german,1,1,held-out re-fit (proxy),0.48166218436211883,baseline: random search with certification (2000 queries),2000,0.7,,1,0.4817355288908591,1,1,"log_credit -0.374, block log_credit->duration",0.015227379504034744
+german,1,1,held-out re-fit (proxy),0.48166218436211883,baseline: grid with our criterion,86640,0.1,,1,0.5223719059355105,1,1,log_credit -0.405,8.451923961459617
+german,1,1,held-out re-fit (proxy),0.48166218436211883,"Algorithm 1, budget 20",440,0.9,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838
+german,1,1,held-out re-fit (proxy),0.48166218436211883,"Algorithm 1, budget 40",460,2.2,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838
+german,1,1,held-out re-fit (proxy),0.48166218436211883,"Algorithm 1, budget 80",500,5.9,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838
+german,1,1,held-out re-fit (proxy),0.48166218436211883,"Algorithm 1, budget 160",580,20.0,,1,0.48247842781713285,1,1,log_credit -0.374,0.16946388600029838

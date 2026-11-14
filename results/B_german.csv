@@ -1,0 +1,5 @@
+case,seed,ind,truth,cost_with_blocks,cost_without_blocks,uses_block,only_with_block,saving_pct,valid_truth_with,valid_truth_without
+german,0,0,held-out re-fit (proxy),0.19232601908201086,0.19232601908201086,0,0,0.0,1,1
+german,0,1,held-out re-fit (proxy),0.024309117644852794,0.024309117644852794,1,0,0.0,1,1
+german,1,0,held-out re-fit (proxy),0.1685623545625985,0.1685623545625985,0,0,0.0,1,1
+german,1,1,held-out re-fit (proxy),0.48166218436211883,0.48166218436211883,1,0,0.0,1,1

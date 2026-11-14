@@ -1,0 +1,17 @@
+case,seed,ind,truth,graph_knowledge,n_graphs,weight_true_graph,method,queries,found,cost,valid_truth,plan,p_mech,p_graph,p_total,conformal_L,conformal_worst_margin,conformal_pass,conformal_min_n_eff
+dag10,0,0,true SCM,expert gives the causal order,24,0.21666666666666667,mechanisms only (graph assumed),260,1,0.22790825793472888,0,v0 +0.228,0.9666666666666667,0.95,0.95,5,-inf,0,35.675531914743836
+dag10,0,0,true SCM,expert gives the causal order,24,0.21666666666666667,conformal box on the mechanisms (graph assumed),130,0,,,,,,,,,,
+dag10,0,0,true SCM,expert gives the causal order,24,0.21666666666666667,graph + mechanisms,370,1,0.22722325855106976,0,v0 +0.227,0.9333333333333333,0.925,0.925,5,-inf,0,35.67525274526621
+dag10,0,1,true SCM,expert gives the causal order,24,0.21666666666666667,mechanisms only (graph assumed),170,1,1.4151057227575763,0,v0 +1.42,0.9333333333333333,0.975,0.975,5,-inf,0,24.68417841369039
+dag10,0,1,true SCM,expert gives the causal order,24,0.21666666666666667,conformal box on the mechanisms (graph assumed),50,0,,,,,,,,,,
+dag10,0,1,true SCM,expert gives the causal order,24,0.21666666666666667,graph + mechanisms,490,1,1.3947353559056244,0,v0 +1.39,0.8333333333333334,0.9,0.9,5,-inf,0,25.02759186891421
+dag10,0,0,true SCM,no prior knowledge (approximate search),30,0,graph + mechanisms,810,1,2.0397837863601835,1,"v0 +0.482, v1 -1.56",1.0,0.925,0.925,8,-inf,0,16.642879707636716
+dag10,0,1,true SCM,no prior knowledge (approximate search),30,0,graph + mechanisms,50,0,,,,,,,,,,
+dag10,1,0,true SCM,expert gives the causal order,49,0.08333333333333333,mechanisms only (graph assumed),410,1,0.857104521039645,1,"v1 +0.857, block v2->v6",0.9333333333333333,0.8974358974358975,0.8717948717948718,6,-inf,0,19.58447915984844
+dag10,1,0,true SCM,expert gives the causal order,49,0.08333333333333333,conformal box on the mechanisms (graph assumed),50,0,,,,,,,,,,
+dag10,1,0,true SCM,expert gives the causal order,49,0.08333333333333333,graph + mechanisms,479,1,0.8631619454648916,1,"v1 +0.863, block v2->v6",0.9666666666666667,0.9743589743589743,0.9487179487179487,6,-inf,0,19.565813145441624
+dag10,1,1,true SCM,expert gives the causal order,49,0.08333333333333333,mechanisms only (graph assumed),200,1,0.24384804794589954,1,v1 +0.244,0.9666666666666667,0.9487179487179487,0.9487179487179487,5,-inf,0,15.64557813964434
+dag10,1,1,true SCM,expert gives the causal order,49,0.08333333333333333,conformal box on the mechanisms (graph assumed),50,0,,,,,,,,,,
+dag10,1,1,true SCM,expert gives the causal order,49,0.08333333333333333,graph + mechanisms,323,1,0.2409882525649417,1,v1 +0.241,0.9333333333333333,0.9230769230769231,0.9230769230769231,5,-inf,0,15.636353062355527
+dag10,1,0,true SCM,no prior knowledge (approximate search),30,0,graph + mechanisms,450,1,3.7632498245214983,0,"v0 +2.81, v1 +0.956, block v3->v9",0.0,0.9,0.9,8,-inf,0,1.0725187165930588
+dag10,1,1,true SCM,no prior knowledge (approximate search),30,0,graph + mechanisms,450,1,0.6188984054529811,1,"v0 +0.206, v1 +0.413",1.0,0.9,0.9,8,-inf,0,19.977804023082868

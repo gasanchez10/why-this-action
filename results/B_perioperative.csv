@@ -1,0 +1,5 @@
+case,seed,ind,truth,cost_with_blocks,cost_without_blocks,uses_block,only_with_block,saving_pct,valid_truth_with,valid_truth_without
+perioperative,0,0,true SCM,0.6369072932668256,0.7156092070704448,1,0,10.997890053121107,0,0
+perioperative,0,1,true SCM,1.062149836700557,1.1693430513526148,1,0,9.166960416625736,0,0
+perioperative,1,0,true SCM,1.324834977852605,1.444178782825168,1,0,8.263783292751137,1,1
+perioperative,1,1,true SCM,0.619591545775572,0.8668904135355082,1,0,28.527119910273036,1,1

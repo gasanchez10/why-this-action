@@ -1,0 +1,23 @@
+FICHA — caso perioperative
+
+Paciente: Age = 75.5, HbA1c = 8.71, eGFR = 51.5, Hb = 11.2, SBP = 151
+Plan recomendado: HbA1c -1.34, block Hb->SBP  (costo 1.335)
+Funciona en 93 % de las 30 versiones del modelo causal (intervalo de 95 %: 79 a 98 %). Riesgo tolerado: 10 %.
+
+¿Por qué esta acción? Aporte de cada camino a la ganancia del plan:
+  +1.583  change HbA1c -> model
+  +0.328  change HbA1c -> eGFR -> Hb -> model
+  +0.264  change HbA1c -> eGFR -> model
+  -0.123  change HbA1c -> eGFR -> Hb -> SBP -> model
+  +0.104  block Hb->SBP | SBP -> model
+  Sumados uno por uno, los caminos dan el 81 % de la ganancia; el resto son interacciones entre caminos (fidelidad).
+
+Si el cambio se logra solo en parte: fracción mínima que mantiene el plan válido
+  HbA1c: 100 %
+
+Si una relación causal no se cumple:
+  HbA1c->eGFR: el plan DEJA de ser válido (funciona en 0 % de las versiones)
+  eGFR->Hb: el plan DEJA de ser válido (funciona en 0 % de las versiones)
+
+Si el bloqueo no se sostiene:
+  Hb->SBP: el plan DEJA de ser válido (funciona en 0 %)

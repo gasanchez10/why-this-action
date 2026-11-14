@@ -1,0 +1,69 @@
+case,seed,ind,truth,ref_cost,method,queries,seconds,note,found,cost,robust_valid,valid_truth,plan,gap_pct
+perioperative,0,0,true SCM,0.6369072932668256,"reference optimum (robust problem, free queries)",0,0,,1,0.6369072932668256,1,0,"HbA1c -0.637, block Hb->SBP",0.0
+perioperative,0,0,true SCM,0.6369072932668256,"oracle (true SCM, free queries)",0,0.0,,1,0.645049739198821,1,1,"HbA1c -0.645, block Hb->SBP",1.2784350278407297
+perioperative,0,0,true SCM,0.6369072932668256,Algorithm 1,170,1.9,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,0,true SCM,0.6369072932668256,Algorithm 1 + polish (extension),290,2.0,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,0,true SCM,0.6369072932668256,ablation: no blocking,200,2.2,,1,0.7159999106336035,1,0,HbA1c -0.716,12.418230753976122
+perioperative,0,0,true SCM,0.6369072932668256,ablation: no certification,50,1.9,,1,0.6384556304725995,1,0,"HbA1c -0.638, block Hb->SBP",0.24310244554306415
+perioperative,0,0,true SCM,0.6369072932668256,ablation: no causal propagation (non-causal stand-in),53,0.3,,1,0.8819458307889753,1,1,HbA1c -0.882,38.47318756004468
+perioperative,0,0,true SCM,0.6369072932668256,baseline: no abduction (stand-in for causal BO without abduction),170,2.1,,1,0.40441951908792023,0,0,HbA1c -0.404,-36.50260825031989
+perioperative,0,0,true SCM,0.6369072932668256,point estimate (one version),55,0.4,,1,0.6267299717240433,0,0,"HbA1c -0.627, block Hb->SBP",-1.5979282464455347
+perioperative,0,0,true SCM,0.6369072932668256,ablation: surrogate on actions,900,0.9,,1,0.6370688160735727,1,0,"HbA1c -0.637, block Hb->SBP",0.025360489423609245
+perioperative,0,0,true SCM,0.6369072932668256,baseline: random search with certification (2000 queries),2003,0.8,,1,0.639673758662611,1,0,"HbA1c -0.64, block Hb->SBP",0.4343591956053272
+perioperative,0,0,true SCM,0.6369072932668256,baseline: grid with our criterion,86640,0.0,,1,0.6486486486486486,1,1,"HbA1c -0.649, block Hb->SBP",1.8434952003138827
+perioperative,0,0,true SCM,0.6369072932668256,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",43320,1.7,,1,0.7702702702702702,1,1,HbA1c -0.77,20.93915055037272
+perioperative,0,0,true SCM,0.6369072932668256,"Algorithm 1, budget 20",140,0.4,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,0,true SCM,0.6369072932668256,"Algorithm 1, budget 40",160,1.3,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,0,true SCM,0.6369072932668256,"Algorithm 1, budget 80",200,4.3,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,0,true SCM,0.6369072932668256,"Algorithm 1, budget 160",280,16.7,,1,0.6425020793401977,1,0,"HbA1c -0.643, block Hb->SBP",0.8784302099408059
+perioperative,0,1,true SCM,1.062149836700557,"reference optimum (robust problem, free queries)",0,0,,1,1.062149836700557,1,0,"HbA1c -1.01, Hb +0.112, block Hb->SBP",0.0
+perioperative,0,1,true SCM,1.062149836700557,"oracle (true SCM, free queries)",0,0.0,,1,1.0777235210833758,1,1,"HbA1c -0.812, Hb +0.532, block Hb->SBP",1.4662417527828708
+perioperative,0,1,true SCM,1.062149836700557,Algorithm 1,260,2.6,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,0,1,true SCM,1.062149836700557,Algorithm 1 + polish (extension),380,2.3,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,0,1,true SCM,1.062149836700557,ablation: no blocking,830,4.9,,1,1.1806867832006247,1,0,HbA1c -1.18,11.160096476433923
+perioperative,0,1,true SCM,1.062149836700557,ablation: no certification,50,2.1,,1,1.0160303554862729,0,0,"HbA1c -0.28, Hb +1.47, block Hb->SBP",-4.342088057702753
+perioperative,0,1,true SCM,1.062149836700557,ablation: no causal propagation (non-causal stand-in),60,0.4,,1,1.1222243083011154,0,0,"HbA1c -0.122, Hb +2",5.6559319151404
+perioperative,0,1,true SCM,1.062149836700557,baseline: no abduction (stand-in for causal BO without abduction),770,6.0,,1,0.5950945509914994,0,0,HbA1c -0.595,-43.972636399390666
+perioperative,0,1,true SCM,1.062149836700557,point estimate (one version),54,0.5,,1,1.048292767381397,0,0,"HbA1c -1.05, block Hb->SBP",-1.30462471869367
+perioperative,0,1,true SCM,1.062149836700557,ablation: surrogate on actions,900,1.2,,1,1.0633552727041347,1,0,"HbA1c -0.933, Hb +0.262, block Hb->SBP",0.11349020278741406
+perioperative,0,1,true SCM,1.062149836700557,baseline: random search with certification (2000 queries),2002,0.8,,1,1.0655595368425814,1,0,"HbA1c -0.875, Hb +0.38, block Hb->SBP",0.32101875123533574
+perioperative,0,1,true SCM,1.062149836700557,baseline: grid with our criterion,86640,0.0,,1,1.0675675675675675,1,0,"HbA1c -1.01, Hb +0.108, block Hb->SBP",0.5100721837739908
+perioperative,0,1,true SCM,1.062149836700557,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",43320,1.7,,1,1.2162162162162162,1,1,HbA1c -1.22,14.505145525818474
+perioperative,0,1,true SCM,1.062149836700557,"Algorithm 1, budget 20",230,0.7,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,0,1,true SCM,1.062149836700557,"Algorithm 1, budget 40",250,1.8,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,0,1,true SCM,1.062149836700557,"Algorithm 1, budget 80",290,5.2,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,0,1,true SCM,1.062149836700557,"Algorithm 1, budget 160",370,18.4,,1,1.070372684904668,1,0,"HbA1c -1.07, block Hb->SBP",0.7741702648709436
+perioperative,1,0,true SCM,1.324834977852605,"reference optimum (robust problem, free queries)",0,0,,1,1.324834977852605,1,1,"HbA1c -1.32, block Hb->SBP",0.0
+perioperative,1,0,true SCM,1.324834977852605,"oracle (true SCM, free queries)",0,0.0,,1,1.3160918038178515,0,1,"HbA1c -1.32, block Hb->SBP",-0.6599443840866193
+perioperative,1,0,true SCM,1.324834977852605,Algorithm 1,260,2.7,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,0,true SCM,1.324834977852605,Algorithm 1 + polish (extension),380,2.4,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,0,true SCM,1.324834977852605,ablation: no blocking,410,3.4,,1,1.444444658817187,1,1,HbA1c -1.44,9.028270159235596
+perioperative,1,0,true SCM,1.324834977852605,ablation: no certification,50,2.2,,1,1.3264648396892895,1,1,"HbA1c -1.33, block Hb->SBP",0.12302376250108438
+perioperative,1,0,true SCM,1.324834977852605,ablation: no causal propagation (non-causal stand-in),58,0.4,,1,1.7397686720166408,0,0,"HbA1c -0.758, Hb +1.96",31.31965120943534
+perioperative,1,0,true SCM,1.324834977852605,baseline: no abduction (stand-in for causal BO without abduction),50,1.9,,0,,,,,
+perioperative,1,0,true SCM,1.324834977852605,point estimate (one version),58,0.4,,1,1.3163745732110277,0,1,"HbA1c -1.32, block Hb->SBP",-0.6386006395521449
+perioperative,1,0,true SCM,1.324834977852605,ablation: surrogate on actions,900,0.9,,1,1.3249148443707173,1,1,"HbA1c -1.32, block Hb->SBP",0.006028412553060747
+perioperative,1,0,true SCM,1.324834977852605,baseline: random search with certification (2000 queries),2001,0.9,,1,1.3250967563024962,1,1,"HbA1c -1.33, block Hb->SBP",0.019759325068213762
+perioperative,1,0,true SCM,1.324834977852605,baseline: grid with our criterion,86640,0.0,,1,1.3378378378378377,1,1,"HbA1c -1.34, block Hb->SBP",0.9814701606315479
+perioperative,1,0,true SCM,1.324834977852605,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",43320,1.7,,1,1.5,1,1,HbA1c -1.5,13.221648361920213
+perioperative,1,0,true SCM,1.324834977852605,"Algorithm 1, budget 20",230,0.7,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,0,true SCM,1.324834977852605,"Algorithm 1, budget 40",250,2.0,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,0,true SCM,1.324834977852605,"Algorithm 1, budget 80",290,5.7,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,0,true SCM,1.324834977852605,"Algorithm 1, budget 160",370,28.4,,1,1.3353940216629532,1,1,"HbA1c -1.34, block Hb->SBP",0.7970082302222403
+perioperative,1,1,true SCM,0.619591545775572,"reference optimum (robust problem, free queries)",0,0,,1,0.619591545775572,1,1,"Hb +1.24, block Hb->SBP",0.0
+perioperative,1,1,true SCM,0.619591545775572,"oracle (true SCM, free queries)",0,0.0,,1,0.619591545775572,1,1,"Hb +1.24, block Hb->SBP",0.0
+perioperative,1,1,true SCM,0.619591545775572,Algorithm 1,230,2.5,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
+perioperative,1,1,true SCM,0.619591545775572,Algorithm 1 + polish (extension),350,2.2,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
+perioperative,1,1,true SCM,0.619591545775572,ablation: no blocking,170,2.5,,1,0.8709175715571761,1,1,HbA1c -0.871,40.56317867717312
+perioperative,1,1,true SCM,0.619591545775572,ablation: no certification,50,2.3,,1,0.6203547940843624,1,1,"Hb +1.24, block Hb->SBP",0.12318572033371833
+perioperative,1,1,true SCM,0.619591545775572,ablation: no causal propagation (non-causal stand-in),58,0.5,,1,0.6221816319073006,0,0,Hb +1.24,0.4180312254723262
+perioperative,1,1,true SCM,0.619591545775572,baseline: no abduction (stand-in for causal BO without abduction),320,3.3,,1,2.0165576029238723,1,1,"HbA1c -1.5, Hb +1.03",225.46564211098973
+perioperative,1,1,true SCM,0.619591545775572,point estimate (one version),54,0.4,,1,0.6249784760651163,1,1,"Hb +1.25, block Hb->SBP",0.8694325037636119
+perioperative,1,1,true SCM,0.619591545775572,ablation: surrogate on actions,900,0.9,,1,0.6198357430325765,1,1,"Hb +1.24, block Hb->SBP",0.039412619276268934
+perioperative,1,1,true SCM,0.619591545775572,baseline: random search with certification (2000 queries),2002,0.9,,1,0.6196915907400727,1,1,"Hb +1.24, block Hb->SBP",0.016146922142956655
+perioperative,1,1,true SCM,0.619591545775572,baseline: grid with our criterion,86640,0.0,,1,0.6216216216216217,1,1,"Hb +1.24, block Hb->SBP",0.3276474412685193
+perioperative,1,1,true SCM,0.619591545775572,"baseline: Karimi et al. 2020 GP-SCM + grid (our re-implementation, gamma=1)",43320,1.8,,1,0.9729729729729729,1,1,HbA1c -0.973,57.034578603724604
+perioperative,1,1,true SCM,0.619591545775572,"Algorithm 1, budget 20",200,0.6,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
+perioperative,1,1,true SCM,0.619591545775572,"Algorithm 1, budget 40",220,1.6,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
+perioperative,1,1,true SCM,0.619591545775572,"Algorithm 1, budget 80",260,4.9,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
+perioperative,1,1,true SCM,0.619591545775572,"Algorithm 1, budget 160",340,19.1,,1,0.622346955219717,1,1,"Hb +1.24, block Hb->SBP",0.4447138543015372
